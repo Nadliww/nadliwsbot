@@ -1,5 +1,7 @@
 FROM node:lts-buster
 
+RUN rm -rf node_modules
+
 RUN apt-get update && \
   apt-get install -y \
   ffmpeg \
